@@ -1,20 +1,37 @@
-// PrakDua.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    // siswa mempunyai 2 nilai yaitu matematika dan fisika
+    //kemudian dihitung reratanya, jika rerata lebih dari 60
+    //maka dari 70 dan dan jika tidak kedduannnya maka
+    //dinyatakan tidak lulus
+
+    float nMat, nFisika, rerata;
+    string status;
+
+    cout << "memasukan nilai matematika";
+    cin >> nMat;
+    cout << "memasukan nilai fisika";
+    cin >> nFisika;
+
+    rerata = (nFisika + nMat)/2;
+
+    if (rerata >= 60) {
+        status = "lulus jalur rerata";
+    }
+    else if (nMat >= 70) {
+        status = "lulus jalur matematika";
+    }
+    else {
+        status = "tidak lulus";
+    }
+
+    cout << "anda dinyatakan =" << status << endl;
+
+    system("pause");
+
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

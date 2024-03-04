@@ -14,6 +14,7 @@ int main() {
 	else {
 		status = "Ganjil";
 	}
+	system("pause");
 }
 
 
